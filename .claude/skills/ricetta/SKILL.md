@@ -31,15 +31,13 @@ Linee guida per un risultato che abbia senso in cucina, non solo aritmeticamente
 
 ## Passo 3 — Classifica l'ingrediente principale
 
-Determina l'ingrediente/base predominante della ricetta e assegnalo a una di queste categorie:
-
-`pasta`, `riso`, `bulgur`, `cous cous`, `carne biologica bianca`, `carne rossa`, `pesce`
+Determina l'ingrediente/base predominante della ricetta e assegnalo a una categoria come: `pasta`, `riso`, `bulgur`, `cous cous`, `carne bianca`, `carne rossa`, `pesce`, `uova`, `legumi`, ...
 
 Regole di classificazione:
-- **carne biologica bianca**: pollo, tacchino, coniglio, maiale (tagli magri) e altre carni bianche.
-- **carne rossa**: manzo, vitello, agnello, maiale (tagli grassi/salume), selvaggina.
+- **carne bianca**: pollo, tacchino, coniglio e altre carni bianche.
+- **carne rossa**: manzo, vitello, maiale, agnello, selvaggina.
 - **pesce**: pesce e frutti di mare/molluschi/crostacei.
-- Se la ricetta non rientra in nessuna di queste 7 categorie (es. un contorno di verdure, patate, legumi, uova come piatto singolo), non forzarla: usa come tipologia il nome reale dell'ingrediente principale (es. "verdure", "patate", "legumi") — questo è normale per i contorni.
+- Se la ricetta è un contorno usa come tipologia il nome reale dell'ingrediente principale (es. "verdure", "patate", "legumi") — questo è normale per i contorni.
 
 Questa classificazione determina anche la cartella di destinazione (vedi Passo 5).
 
@@ -79,9 +77,9 @@ Mappa la categoria del Passo 3 sulla sottocartella:
 
 | Categoria | Cartella |
 |---|---|
-| pasta, riso, bulgur, cous cous | `ricette/primi/` |
-| carne biologica bianca, carne rossa, pesce | `ricette/secondi/` |
-| qualsiasi altra cosa (verdure, patate, legumi, uova come piatto unico...) | `ricette/contorni/` |
+| cereali: pasta, riso, bulgur, cous cous, ... | `ricette/primi/` |
+| carne bianca, carne rossa, pesce, uova | `ricette/secondi/` |
+| qualsiasi altra cosa (verdure, patate, legumi...) | `ricette/contorni/` |
 
 Nome del file: slug del titolo in minuscolo, spazi sostituiti da trattini, senza accenti/caratteri speciali, estensione `.md` (es. "Spaghetti alla Carbonara" → `spaghetti-alla-carbonara.md`).
 
