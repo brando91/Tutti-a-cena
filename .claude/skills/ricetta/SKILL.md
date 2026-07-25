@@ -11,11 +11,12 @@ L'utente incolla in chat il contenuto di una ricetta (copiato da una pagina web,
 
 Il contenuto grezzo arriva incollato nel messaggio dell'utente (spesso è tutto il testo di una pagina web: menu, pubblicità, articoli correlati, recensioni prodotto...). Non serve fare fetch di nessuna URL: lavora direttamente su quel testo.
 
-Estrai **solo** questi tre elementi, scartando tutto il resto:
+Estrai **solo** questi quattro elementi, scartando tutto il resto:
 
 - **Titolo** della ricetta
 - **Lista ingredienti**, con quantità e unità di misura originali
 - **Procedimento**, passo per passo
+- **Tempo di preparazione**: il tempo necessario per arrivare dal piatto pronto in tavola. Molte pagine di ricette lo scompongono in "tempo di preparazione" (attivo) e "tempo di cottura": se c'è un "tempo totale" esplicito usa quello, altrimenti somma i due; se la pagina dà un solo tempo complessivo usa quello. Se non è indicato alcun tempo, annotalo come non specificato — non inventarlo.
 
 Non è necessaria un'immagine: la ricetta viene identificata con un paio di emoji rappresentative (vedi Passo 4), non con una foto.
 
@@ -77,6 +78,8 @@ Usa esattamente questo template:
 # {emoji di categoria}{emoji ingredienti} {Titolo}
 
 **Tipologia:** {categoria dal Passo 3}
+
+**Tempo di preparazione:** {tempo dal Passo 1}
 
 **Ultima volta mangiato:** _(da compilare)_
 

@@ -4,6 +4,8 @@
 
 **Fonte:** ricetteperbimby.it
 
+**Tempo di preparazione:** 35 minuti
+
 **Ultima volta mangiato:** _(da compilare)_
 
 ## Ingredienti (per 4 persone)
