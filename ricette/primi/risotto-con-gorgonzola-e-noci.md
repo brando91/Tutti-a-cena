@@ -1,6 +1,4 @@
-# Risotto con gorgonzola e noci
-
-> Nota: immagine principale non disponibile — l'URL non era presente nel testo della pagina fornito. Se hai il link diretto dell'immagine, forniscilo e lo aggiungo.
+# 🍚🧀🌰 Risotto con gorgonzola e noci
 
 **Tipologia:** riso
 
