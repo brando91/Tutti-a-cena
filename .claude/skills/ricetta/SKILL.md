@@ -1,25 +1,27 @@
 ---
 name: ricetta
-description: "Import a recipe from a URL into this repo's ricette/ folder as a clean, standardized Markdown file scaled to 4 servings. Use whenever the user invokes /ricetta <url>, pastes a recipe link and asks to save/import it, or asks to 'add this recipe to the repo'. Not for general recipe questions or cooking advice with no URL involved."
+description: "Import a recipe the user pastes into chat (title, ingredients, instructions — copied from a webpage or app) into this repo's ricette/ folder as a clean, standardized Markdown file scaled to 4 servings. Use whenever the user invokes /ricetta, pastes recipe text/content and asks to save/import it, or asks to 'add this recipe to the repo'. Not for general recipe questions or cooking advice with no recipe content to import."
 ---
 
 ## Cosa fa questa skill
 
-Data l'URL di una pagina ricetta (o il suo contenuto incollato in chat, quando il fetch web non è disponibile), produce un file Markdown pulito e standardizzato, con le dosi riportate a 4 persone, e lo salva nella sottocartella corretta di `ricette/` in questo repository.
+L'utente incolla in chat il contenuto di una ricetta (copiato da una pagina web, un'app o scritto a mano) invece di passare un URL da recuperare — niente fetch web, quindi funziona anche in sessioni/ambienti senza accesso a internet. La skill pulisce quel testo, lo trasforma in un file Markdown standardizzato con le dosi riportate a 4 persone, e lo salva nella sottocartella corretta di `ricette/` in questo repository.
 
-## Passo 1 — Recupero e pulizia del contenuto
+## Passo 1 — Pulizia del contenuto incollato
 
-Usa lo strumento di fetch web (WebFetch, o `curl` se WebFetch non è disponibile) per scaricare la pagina all'URL fornito. Se il fetch non è possibile (es. sito bloccato, ambiente senza accesso web) e l'utente ha incollato il contenuto della pagina in chat, lavora direttamente su quel testo.
+Il contenuto grezzo arriva incollato nel messaggio dell'utente (spesso è tutto il testo di una pagina web: menu, pubblicità, articoli correlati, recensioni prodotto...). Non serve fare fetch di nessuna URL: lavora direttamente su quel testo.
 
-Estrai **solo** questi tre elementi, scartando tutto il resto (pubblicità, biografia dell'autore, commenti, valori nutrizionali, articoli correlati, video incorporati, ecc.):
+Estrai **solo** questi tre elementi, scartando tutto il resto:
 
 - **Titolo** della ricetta
 - **Lista ingredienti**, con quantità e unità di misura originali
 - **Procedimento**, passo per passo
 
-Non è necessario recuperare un'immagine: la ricetta viene identificata con un paio di emoji rappresentative (vedi Passo 4), non con una foto.
+Non è necessaria un'immagine: la ricetta viene identificata con un paio di emoji rappresentative (vedi Passo 4), non con una foto.
 
-Cerca anche, se presente, il numero di porzioni originario (es. "per 2 persone", "serves 6", "dosi per 8"): serve per il passo successivo. Se la pagina non lo dichiara, annotalo come non specificato — non inventarlo.
+Se nel testo incollato compare anche l'URL/nome della pagina di origine, tienilo da parte per il campo "Fonte" del Passo 5 — ma non è un dato indispensabile, e se l'utente non lo fornisce va semplicemente omesso (non chiederlo esplicitamente, non inventarlo).
+
+Cerca anche, se presente, il numero di porzioni originario (es. "per 2 persone", "serves 6", "dosi per 8"): serve per il passo successivo. Se il testo non lo dichiara, annotalo come non specificato — non inventarlo.
 
 ## Passo 2 — Riporta le dosi a 4 persone
 
@@ -76,8 +78,6 @@ Usa esattamente questo template:
 
 **Tipologia:** {categoria dal Passo 3}
 
-**Fonte:** {URL originale, se disponibile}
-
 ## Ingredienti (per 4 persone)
 
 - {ingrediente 1 con quantità scalata}
@@ -90,6 +90,8 @@ Usa esattamente questo template:
 2. {passo 2}
 ...
 ```
+
+Se l'utente ha fornito anche l'URL/nome della pagina di origine, aggiungi una riga `**Fonte:** {...}` subito sotto "Tipologia" — altrimenti ometti del tutto quel campo, non lasciare placeholder vuoti.
 
 Se hai dovuto assumere qualcosa (porzioni originali mancanti, ingrediente principale ambiguo), aggiungi una riga di nota subito sotto il titolo.
 
