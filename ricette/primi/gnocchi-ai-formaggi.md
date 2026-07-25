@@ -1,8 +1,8 @@
-# 🥔🧀 Gnocchi (pronti) ai formaggi
+# 🥔🧀 Gnocchi ai formaggi
 
 **Tipologia:** gnocchi
 
-**Tempo di preparazione:** 20 minuti
+**Tempo di preparazione:** 10 minuti
 
 **Ultima volta mangiato:** _(da compilare)_
 
