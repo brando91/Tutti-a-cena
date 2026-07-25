@@ -78,6 +78,8 @@ Usa esattamente questo template:
 
 **Tipologia:** {categoria dal Passo 3}
 
+**Ultima volta mangiato:** _(da compilare)_
+
 ## Ingredienti (per 4 persone)
 
 - {ingrediente 1 con quantità scalata}
@@ -90,6 +92,8 @@ Usa esattamente questo template:
 2. {passo 2}
 ...
 ```
+
+Il campo "Ultima volta mangiato" va sempre incluso ma mai valorizzato: lascialo esattamente come `_(da compilare)_`, anche se dal contesto potresti dedurre una data plausibile — è un campo che l'utente aggiorna a mano ogni volta che rifà il piatto, non qualcosa da stimare o dedurre.
 
 Se l'utente ha fornito anche l'URL/nome della pagina di origine, aggiungi una riga `**Fonte:** {...}` subito sotto "Tipologia" — altrimenti ometti del tutto quel campo, non lasciare placeholder vuoti.
 

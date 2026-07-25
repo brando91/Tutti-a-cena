@@ -4,6 +4,8 @@
 
 **Fonte:** https://www.ricetteperbimby.it/ricette/risotto-gorgonzola-noci-bimby
 
+**Ultima volta mangiato:** _(da compilare)_
+
 ## Ingredienti (per 4 persone)
 
 - 20 g noci
