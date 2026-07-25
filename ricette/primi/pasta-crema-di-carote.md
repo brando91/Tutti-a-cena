@@ -2,7 +2,7 @@
 
 **Tipologia:** pasta
 
-**Tempo di preparazione:** 30 minuti
+**Tempo di preparazione:** 25 minuti
 
 **Ultima volta mangiato:** _(da compilare)_
 
