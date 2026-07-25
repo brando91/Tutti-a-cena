@@ -1,4 +1,4 @@
-# 🥟🌿 Ravioli (già pronti) burro e salvia
+# 🥟🌿 Ravioli burro e salvia
 
 **Tipologia:** pasta
 
