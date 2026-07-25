@@ -2,8 +2,6 @@
 
 **Tipologia:** riso
 
-**Fonte:** https://www.ricetteperbimby.it/ricette/risotto-gorgonzola-noci-bimby
-
 **Tempo di preparazione:** 25 minuti
 
 **Ultima volta mangiato:** _(da compilare)_

@@ -2,8 +2,6 @@
 
 **Tipologia:** pasta
 
-**Fonte:** Le ricette di fragolina
-
 **Tempo di preparazione:** 20 minuti
 
 **Ultima volta mangiato:** _(da compilare)_

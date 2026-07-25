@@ -2,8 +2,6 @@
 
 **Tipologia:** cavolfiore
 
-**Fonte:** ricetteperbimby.it
-
 **Tempo di preparazione:** 35 minuti
 
 **Ultima volta mangiato:** _(da compilare)_

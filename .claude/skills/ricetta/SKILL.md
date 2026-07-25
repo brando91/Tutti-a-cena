@@ -18,9 +18,7 @@ Estrai **solo** questi quattro elementi, scartando tutto il resto:
 - **Procedimento**, passo per passo
 - **Tempo di preparazione**: il tempo necessario per arrivare dal piatto pronto in tavola. Molte pagine di ricette lo scompongono in "tempo di preparazione" (attivo) e "tempo di cottura": se c'è un "tempo totale" esplicito usa quello, altrimenti somma i due; se la pagina dà un solo tempo complessivo usa quello. Se non è indicato alcun tempo, annotalo come non specificato — non inventarlo.
 
-Non è necessaria un'immagine: la ricetta viene identificata con un paio di emoji rappresentative (vedi Passo 4), non con una foto.
-
-Se nel testo incollato compare anche l'URL/nome della pagina di origine, tienilo da parte per il campo "Fonte" del Passo 5 — ma non è un dato indispensabile, e se l'utente non lo fornisce va semplicemente omesso (non chiederlo esplicitamente, non inventarlo).
+Non è necessaria un'immagine: la ricetta viene identificata con un paio di emoji rappresentative (vedi Passo 4), non con una foto. Non serve neanche riportare la fonte/URL della pagina di origine: anche se compare nel testo incollato, non va incluso nel file.
 
 Cerca anche, se presente, il numero di porzioni originario (es. "per 2 persone", "serves 6", "dosi per 8"): serve per il passo successivo. Se il testo non lo dichiara, annotalo come non specificato — non inventarlo.
 
@@ -98,7 +96,7 @@ Usa esattamente questo template:
 
 Il campo "Ultima volta mangiato" va sempre incluso ma mai valorizzato: lascialo esattamente come `_(da compilare)_`, anche se dal contesto potresti dedurre una data plausibile — è un campo che l'utente aggiorna a mano ogni volta che rifà il piatto, non qualcosa da stimare o dedurre.
 
-Se l'utente ha fornito anche l'URL/nome della pagina di origine, aggiungi una riga `**Fonte:** {...}` subito sotto "Tipologia" — altrimenti ometti del tutto quel campo, non lasciare placeholder vuoti.
+Non aggiungere un campo "Fonte"/URL della pagina di origine, nemmeno quando è disponibile nel testo incollato.
 
 Se hai dovuto assumere qualcosa (porzioni originali mancanti, ingrediente principale ambiguo), aggiungi una riga di nota subito sotto il titolo.
 
