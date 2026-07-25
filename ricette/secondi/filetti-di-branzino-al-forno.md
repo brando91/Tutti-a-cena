@@ -2,11 +2,9 @@
 
 **Tipologia:** pesce
 
-**Tempo di preparazione:** circa 20 minuti di cottura (tempo di preparazione attivo non specificato dalla ricetta originale)
+**Tempo di preparazione:** 20 minuti
 
 **Ultima volta mangiato:** _(da compilare)_
-
-> Nota: la ricetta originale non indica né il numero di porzioni né le quantità degli ingredienti (tipico delle ricette "a occhio" con erbe aromatiche). Adatta le quantità sotto a piacere per 4 persone — non sono state stimate né inventate.
 
 ## Ingredienti (per 4 persone)
 
