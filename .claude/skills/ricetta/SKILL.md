@@ -16,7 +16,7 @@ Estrai **solo** questi quattro elementi, scartando tutto il resto:
 - **Titolo** della ricetta
 - **Lista ingredienti**, con quantità e unità di misura originali
 - **Procedimento**, passo per passo
-- **Tempo di preparazione**: il tempo necessario per arrivare dal piatto pronto in tavola. Molte pagine di ricette lo scompongono in "tempo di preparazione" (attivo) e "tempo di cottura": se c'è un "tempo totale" esplicito usa quello, altrimenti somma i due; se la pagina dà un solo tempo complessivo usa quello. Se non è indicato alcun tempo, annotalo come non specificato — non inventarlo.
+- **Tempo di preparazione**: il tempo necessario per arrivare dal piatto pronto in tavola. Molte pagine di ricette lo scompongono in "tempo di preparazione" (attivo) e "tempo di cottura": se c'è un "tempo totale" esplicito usa quello, altrimenti somma i due; se la pagina dà un solo tempo complessivo usa quello. Nel file va scritto **sempre e solo come numero di minuti** (es. "25 minuti") — niente "circa", parentesi, somme mostrate o altre note nel campo stesso. Se la pagina non indica alcun tempo, stima un valore ragionevole sommando i tempi impliciti nei singoli passaggi del procedimento (o, in mancanza di indicazioni, un tempo plausibile per quel tipo di piatto) e scrivi comunque solo il numero di minuti.
 
 Non è necessaria un'immagine: la ricetta viene identificata con un paio di emoji rappresentative (vedi Passo 4), non con una foto. Non serve neanche riportare la fonte/URL della pagina di origine: anche se compare nel testo incollato, non va incluso nel file.
 
