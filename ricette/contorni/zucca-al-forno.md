@@ -2,7 +2,7 @@
 
 **Tipologia:** zucca
 
-**Tempo di preparazione:** 40 minuti
+**Tempo di preparazione:** 30 minuti
 
 **Ultima volta mangiato:** _(da compilare)_
 
