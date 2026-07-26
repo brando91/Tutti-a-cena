@@ -18,7 +18,7 @@ Non chiedere altro oltre a queste due: l'abbinamento dei contorni (vedi Passo 4)
 
 ## Passo 2 — Raccogli i dati delle ricette
 
-Usa Grep con il pattern `^# |^\*\*Tipologia:|^\*\*Tempo di preparazione:|^\*\*Ultima volta mangiato:` sulla cartella `ricette/` (ricorsivo, con i numeri di riga) per estrarre in un colpo solo, per ogni ricetta: emoji+titolo, tipologia, tempo di preparazione in minuti, e data dell'ultima volta mangiato (o `_(da compilare)_`). Non serve leggere il corpo di ogni ricetta (ingredienti/procedimento) — il piano si basa solo su questi metadati più il percorso del file per il link. Fai eccezione solo per le ricette che stai valutando di includere e che contengono legumi: in quel caso apri il file per controllare se gli ingredienti sono legumi secchi (da ammollare) o già pronti (lessati/in scatola/surgelati — non serve ammollo).
+Usa Grep con il pattern `^# |^\*\*Tipologia:|^\*\*Tempo di preparazione:|^\*\*Ultima volta mangiato:` sulla cartella `ricette/` (ricorsivo, con i numeri di riga) per estrarre in un colpo solo, per ogni ricetta: emoji+titolo, tipologia, tempo di preparazione in minuti, e data dell'ultima volta mangiato (o `_(da compilare)_`). Non serve leggere il corpo di ogni ricetta (ingredienti/procedimento) — il piano si basa solo su questi metadati più il percorso del file per il link. Fai eccezione solo per le ricette che stai valutando di includere e il cui titolo/tipologia suggerisce la presenza di legumi (ceci, fagioli, lenticchie, piselli, fagiolini...): in quel caso apri il file per verificare se sono nell'elenco ingredienti — non serve controllare come sono descritti (lessati, in scatola, surgelati, ecc.), vedi Passo 4.
 
 Tieni traccia della sottocartella di ciascuna ricetta (`primi`/`secondi`/`contorni`), perché insieme alla "Tipologia" serve per applicare i vincoli di frequenza.
 
@@ -29,16 +29,17 @@ La settimana da pianificare è quella successiva a quella corrente. Calcola le d
 ## Passo 4 — Applica i vincoli, in quest'ordine
 
 1. **Pasti da non pianificare**: per i pasti indicati dall'utente al Passo 1, non assegnare nessuna ricetta — segnalali semplicemente come tali nel piano.
-2. **Contorni**: quando un pasto è un primo (da `ricette/primi/`), la ricetta principale basta da sola. Quando un pasto è un secondo (da `ricette/secondi/`), abbina sempre anche una ricetta da `ricette/contorni/` come accompagnamento — scegli un contorno coerente con il secondo e non ripetuto rispetto agli altri pasti della settimana.
-3. **Frequenza degli ingredienti principali**:
+2. **Venerdì sera è sempre pizza 🍕**: non scegliere una ricetta dal repository per la cena di venerdì, salvo che l'utente non abbia indicato al Passo 1 che quel pasto specifico va escluso per quella settimana (es. si mangia fuori). Scrivi semplicemente `- **Cena:** 🍕 Pizza`, senza tempo di preparazione né link. Questo pasto non entra nei conteggi di frequenza degli ingredienti principali né nei vincoli di tempo.
+3. **Contorni**: quando un pasto è un primo (da `ricette/primi/`), la ricetta principale basta da sola. Quando un pasto è un secondo (da `ricette/secondi/`), abbina sempre anche una ricetta da `ricette/contorni/` come accompagnamento — scegli un contorno coerente con il secondo e non ripetuto rispetto agli altri pasti della settimana.
+4. **Frequenza degli ingredienti principali**:
    - al massimo 1 ricetta a settimana con tipologia carne bianca
    - al massimo 1 ricetta a settimana con tipologia pesce
    - al massimo 1 ricetta a settimana con tipologia uova
    - al massimo 1 ricetta ogni 3 settimane con tipologia carne rossa — controlla gli ultimi 2 file presenti in `menu/` (le due settimane precedenti, se esistono): se in uno dei due compare già una ricetta di carne rossa, non includerne un'altra questa settimana; altrimenti puoi includerne al massimo una. Se `menu/` è vuota o ha meno di 2 file, il vincolo è considerato soddisfatto e puoi includerne una.
-4. **Cena nei giorni di ufficio**: solo ricette con tempo di preparazione ≤ 25 minuti.
-5. **Pranzo dal lunedì al venerdì**: preferisci ricette con tempo di preparazione ≤ 15 minuti. Se per varietà scegli una ricetta più lunga, va bene lo stesso, ma aggiungi una nota che suggerisce di prepararne una dose abbondante la sera prima, così a pranzo si tratta solo di riscaldare.
-6. **Legumi da ammollare**: se una ricetta scelta (principale o contorno) usa legumi secchi (non già lessati/in scatola/surgelati — vedi Passo 2), aggiungi una nota nel giorno *precedente* per ricordare di metterli in ammollo.
-7. **Varietà, stagionalità e ricette non preparate da tempo**: tra le ricette che rispettano i vincoli sopra, privilegia in quest'ordine di importanza:
+5. **Cena nei giorni di ufficio**: solo ricette con tempo di preparazione ≤ 25 minuti.
+6. **Pranzo dal lunedì al venerdì**: preferisci ricette con tempo di preparazione ≤ 15 minuti. Se per varietà scegli una ricetta più lunga, va bene lo stesso, ma aggiungi una nota che suggerisce di prepararne una dose abbondante la sera prima, così a pranzo si tratta solo di riscaldare.
+7. **Legumi da ammollare**: se una ricetta scelta (principale o contorno) include legumi tra gli ingredienti, considerali *sempre* legumi secchi da ammollare — non fare eccezioni anche se la ricetta li descrive come lessati, in scatola, surgelati o già pronti. Aggiungi sempre una nota nel giorno *precedente* per ricordare di metterli in ammollo.
+8. **Varietà, stagionalità e ricette non preparate da tempo**: tra le ricette che rispettano i vincoli sopra, privilegia in quest'ordine di importanza:
    - varietà: evita di ripetere a distanza ravvicinata la stessa tipologia/ingrediente principale (es. non pasta a ogni pasto, non due contorni di verdure uguali in pochi giorni)
    - stagionalità: preferisci ricette con ingredienti di stagione rispetto al periodo dell'anno della settimana pianificata
    - tempo dall'ultima volta: a parità delle altre condizioni, preferisci le ricette con la data in "Ultima volta mangiato" più lontana nel passato, o non ancora compilata, rispetto a quelle mangiate di recente
@@ -63,7 +64,7 @@ Usa questo template per ogni giorno:
 ...
 ```
 
-(ripeti la struttura per tutti e 7 i giorni, nell'ordine lunedì → domenica)
+(ripeti la struttura per tutti e 7 i giorni, nell'ordine lunedì → domenica; per venerdì la cena è `- **Cena:** 🍕 Pizza`, salvo diversa indicazione dell'utente per quella settimana)
 
 Per un pasto non pianificato scrivi `- **Pranzo:** fuori` (o il testo indicato dall'utente) al posto della ricetta.
 
