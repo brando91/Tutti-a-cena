@@ -1,4 +1,4 @@
-# 🌽🌭 Polenta con salsiccia
+# 🌽🌭 Salsiccia e polenta
 
 **Tipologia:** carne rossa
 
