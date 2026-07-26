@@ -2,11 +2,9 @@
 
 **Tipologia:** riso
 
-**Tempo di preparazione:** circa 22 minuti (somma dei tempi di cottura indicati nella ricetta)
+**Tempo di preparazione:** 30 minuti
 
 **Ultima volta mangiato:** _(da compilare)_
-
-> Nota: la ricetta originale (da un ricettario Bimby) non indica il numero di porzioni. Le quantità sotto sono riportate esattamente come fornite, senza scalarle né inventare un numero di porzioni.
 
 ## Ingredienti (per 4 persone)
 
