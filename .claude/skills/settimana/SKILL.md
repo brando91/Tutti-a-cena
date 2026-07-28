@@ -36,7 +36,7 @@ La settimana da pianificare è quella successiva a quella corrente. Calcola le d
    - al massimo 1 ricetta a settimana con tipologia pesce
    - al massimo 1 ricetta a settimana con tipologia uova
    - al massimo 1 ricetta ogni 3 settimane con tipologia carne rossa — controlla gli ultimi 2 file presenti in `menu/` (le due settimane precedenti, se esistono): se in uno dei due compare già una ricetta di carne rossa, non includerne un'altra questa settimana; altrimenti puoi includerne al massimo una. Se `menu/` è vuota o ha meno di 2 file, il vincolo è considerato soddisfatto e puoi includerne una.
-5. **Cena nei giorni di ufficio**: solo ricette con tempo di preparazione ≤ 25 minuti.
+5. **Cena nei giorni di ufficio**: solo ricette con tempo di preparazione ≤ 25 minuti per la ricetta principale. Se il pasto è un secondo e quindi include un contorno (vedi punto 3), anche il contorno deve avere un tempo di preparazione ≤ 20 minuti.
 6. **Pranzo dal lunedì al venerdì**: preferisci ricette con tempo di preparazione ≤ 15 minuti. Se per varietà scegli una ricetta più lunga, va bene lo stesso, ma aggiungi una nota che suggerisce di prepararne una dose abbondante la sera prima, così a pranzo si tratta solo di riscaldare.
 7. **Legumi da ammollare**: se una ricetta scelta (principale o contorno) include legumi tra gli ingredienti, considerali *sempre* legumi secchi da ammollare — non fare eccezioni anche se la ricetta li descrive come lessati, in scatola, surgelati o già pronti. Aggiungi sempre una nota nel giorno *precedente* per ricordare di metterli in ammollo.
 8. **Varietà, stagionalità e ricette non preparate da tempo**: tra le ricette che rispettano i vincoli sopra, privilegia in quest'ordine di importanza:
