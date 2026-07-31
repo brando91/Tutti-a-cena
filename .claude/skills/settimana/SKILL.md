@@ -1,11 +1,11 @@
 ---
 name: settimana
-description: "Generate the weekly meal plan (14 meals: pranzo e cena for 7 days) for the upcoming week, picking recipes from this repo's ricette/ folder and saving it as a new numbered file in menu/. Use whenever the user invokes /settimana or asks for a 'menu settimanale', 'piano dei pasti', or to plan what to cook for the coming week. Not for a single recipe request — that's the /ricetta skill."
+description: "Generate the weekly meal plan (14 meals: pranzo e cena for 7 days) for the upcoming week, picking recipes from this repo's ricette/ folder and saving it as a new file in menu/ named after the week's date range. Use whenever the user invokes /settimana or asks for a 'menu settimanale', 'piano dei pasti', or to plan what to cook for the coming week. Not for a single recipe request — that's the /ricetta skill."
 ---
 
 ## Cosa fa questa skill
 
-Genera il piano dei pasti per la settimana successiva a quella corrente (lunedì–domenica, 14 pasti: pranzo e cena), pescando le ricette dalla cartella `ricette/` di questo repository e rispettando vincoli su tempo di preparazione, varietà, stagionalità e frequenza degli ingredienti principali. Salva il piano come nuovo file Markdown numerato in `menu/`.
+Genera il piano dei pasti per la settimana successiva a quella corrente (lunedì–domenica, 14 pasti: pranzo e cena), pescando le ricette dalla cartella `ricette/` di questo repository e rispettando vincoli su tempo di preparazione, varietà, stagionalità e frequenza degli ingredienti principali. Salva il piano come nuovo file Markdown in `menu/`, con il nome basato sull'intervallo di date della settimana (vedi Passo 5) così che i file risultino ordinabili alfabeticamente in ordine cronologico.
 
 ## Passo 1 — Fai sempre queste domande prima di generare il piano
 
@@ -46,12 +46,12 @@ La settimana da pianificare è quella successiva a quella corrente. Calcola le d
 
 ## Passo 5 — Scrivi il file del piano
 
-Determina il numero incrementale contando i file già presenti in `menu/` (creala se non esiste) e usa il numero successivo, con 3 cifre (`001`, `002`, ...).
+Il nome del file è l'intervallo di date della settimana in formato ISO, ordinabile alfabeticamente: `{lunedì AAAA-MM-GG}_{domenica AAAA-MM-GG}.md` (es. `2026-08-03_2026-08-09.md`). Non usare più numerazione incrementale.
 
 Usa questo template per ogni giorno:
 
 ```markdown
-# Menu settimanale {numero} — dal {lunedì GG/MM/AAAA} al {domenica GG/MM/AAAA}
+# Menu settimanale — dal {lunedì GG/MM/AAAA} al {domenica GG/MM/AAAA}
 
 ## Lunedì {GG/MM}
 
@@ -74,10 +74,10 @@ Subito sotto il pasto interessato, quando applicabile, aggiungi le note richiest
 
 ## Passo 6 — Salva e conferma
 
-Salva il file in `menu/{numero}.md`. Se stai lavorando su un clone locale (caso più comune in questa sessione):
+Salva il file in `menu/{lunedì AAAA-MM-GG}_{domenica AAAA-MM-GG}.md`. Se stai lavorando su un clone locale (caso più comune in questa sessione):
 ```
-git add menu/{numero}.md
-git commit -m "Aggiunge menu settimanale {numero}"
+git add menu/{lunedì AAAA-MM-GG}_{domenica AAAA-MM-GG}.md
+git commit -m "Aggiunge menu settimanale dal {lunedì GG/MM/AAAA} al {domenica GG/MM/AAAA}"
 git push -u origin <branch corrente>
 ```
 Fai sempre un `git fetch`/controllo dello stato del branch remoto prima di committare (altri file potrebbero essere stati aggiornati nel frattempo), e non forzare mai il push.
