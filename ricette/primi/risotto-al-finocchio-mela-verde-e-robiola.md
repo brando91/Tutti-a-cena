@@ -1,30 +1,29 @@
 # 🍚🍏🧀 Risotto al finocchio, mela verde e robiola
 
-_Nota: il testo originale indicava "per 3/4 porzioni" (dosi non scalate, già adeguate a circa 4 persone) e non riportava procedimento né tempo di preparazione espliciti — il procedimento e il tempo qui sotto sono una ricostruzione plausibile basata sulla tecnica classica del risotto mantecato._
+_Nota: il testo originale indicava "per 3/4 porzioni" (dosi non scalate, già adeguate a circa 4 persone) e non riportava procedimento né tempo di preparazione espliciti — procedimento e tempo sono una ricostruzione plausibile con la tecnica classica del risotto Bimby (soffritto, tostatura, cottura a tempo con farfalla, mantecatura)._
 
 **Tipologia:** riso
 
-**Tempo di preparazione:** 35 minuti
+**Tempo di preparazione:** 30 minuti
 
 **Ultima volta mangiato:** _(da compilare)_
 
 ## Ingredienti (per 4 persone)
 
-- 1 finocchio
-- 1/2 mela verde
+- 1 finocchio, a pezzi (qualche ciuffo verde tenuto da parte per decorare)
+- 1/2 mela verde, a cubetti
 - 30 g burro
 - 100 g robiola fresca
 - 250 g riso arborio
+- 600 g brodo vegetale (o acqua) caldo
 - sale, q.b.
-- acqua o brodo, q.b. (per portare a cottura)
 
 ## Procedimento
 
-1. Lavare e tagliare a cubetti piccoli il finocchio, tenendo da parte qualche ciuffo verde per decorare.
-2. Sbucciare la mela verde e tagliarla a cubetti piccoli.
-3. In una casseruola sciogliere metà del burro e rosolare il finocchio a fuoco medio per circa 5 minuti, finché morbido.
-4. Aggiungere il riso e tostarlo per 2 minuti, mescolando.
-5. Versare il brodo (o acqua) caldo poco alla volta, mescolando e aggiungendo altro liquido man mano che viene assorbito, per circa 16-18 minuti.
-6. A metà cottura unire i cubetti di mela verde, così da mantenerli leggermente croccanti.
-7. A cottura ultimata, spegnere il fuoco e mantecare con il burro rimasto e la robiola, mescolando energicamente fino a ottenere una crema omogenea.
-8. Regolare di sale, impiattare, decorare con i ciuffetti di finocchio tenuti da parte e servire subito.
+1. Mettere nel boccale il finocchio a pezzi: 5 sec. vel. 4. Riunire sul fondo con la spatola.
+2. Aggiungere metà del burro: 4 min. 100°C vel. 1.
+3. Posizionare la farfalla, aggiungere il riso e tostare: 3 min. 100°C vel. 1 antiorario.
+4. Aggiungere il brodo (o acqua) e il sale: 14 min. 100°C vel. 1 antiorario.
+5. A circa metà cottura, con lo sportellino aperto, aggiungere i cubetti di mela verde, così restino leggermente croccanti.
+6. A cottura ultimata, aggiungere il burro rimasto e la robiola: 1 min. vel. Soft antiorario, fino a ottenere una crema omogenea.
+7. Impiattare, decorare con i ciuffetti di finocchio tenuti da parte e servire subito.
