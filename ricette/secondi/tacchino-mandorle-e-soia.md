@@ -6,7 +6,7 @@ _Nota: variante di "Pollo mandorle e soia" preparata con il tacchino._
 
 **Tempo di preparazione:** 20 minuti
 
-**Ultima volta mangiato:** _(da compilare)_
+**Ultima volta mangiato:** 09-09-2026
 
 ## Ingredienti (per 4 persone)
 
