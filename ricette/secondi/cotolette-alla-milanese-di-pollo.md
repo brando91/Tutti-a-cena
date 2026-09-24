@@ -6,7 +6,7 @@ _Nota: variante della classica cotoletta alla milanese preparata con il pollo al
 
 **Tempo di preparazione:** 25 minuti
 
-**Ultima volta mangiato:** _(da compilare)_
+**Ultima volta mangiato:** 24-09-2026
 
 ## Ingredienti (per 4 persone)
 
