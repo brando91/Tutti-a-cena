@@ -4,7 +4,7 @@
 
 **Tempo di preparazione:** 10 minuti
 
-**Ultima volta mangiato:** _(da compilare)_
+**Ultima volta mangiato:** 06-10-2026
 
 > Nota: la ricetta originale non indica il numero di porzioni (le dosi date, 2 uova e 1 cespo di radicchio, sembrano pensate per 1-2 persone). Le quantità sotto sono riportate esattamente come fornite, senza scalarle né inventare un numero di porzioni.
 
