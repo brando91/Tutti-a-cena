@@ -4,7 +4,7 @@
 
 **Tempo di preparazione:** 10 minuti
 
-**Ultima volta mangiato:** 25-08-2026
+**Ultima volta mangiato:** 08-10-2026
 
 ## Ingredienti (per 4 persone)
 
